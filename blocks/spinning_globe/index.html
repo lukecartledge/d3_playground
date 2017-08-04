@@ -11,7 +11,8 @@
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;
-  color: #333
+  color: #333;
+  background-color: #eee;
 }
 </style>
 
@@ -59,9 +60,9 @@ body {
     d3.json('ne_10m_coastline.json', function (err, json) {
       geojson = json;
       window.setInterval(update, 100);
-      update;
+      update();
     })
-    
+
   </script>
 
 </body>
